@@ -1,0 +1,109 @@
+.navFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+  position: relative;
+  z-index: 10; /* Ensures navbar stays above content */
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.profileImage1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust this based on your navbar height */
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+  }
+
+  .navLinks.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Styling for the content area to avoid overlap */
+.content {
+  padding: 20px;
+  margin-top: 60px; /* Create space for the fixed navbar */
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 20px; /* Additional margin for spacing */
+}
+
+/* Circular image styling */
+.profileImage {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid #4A4A4A;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 
+              0 0 20px rgba(0, 0, 255, 0.1);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profileImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5), 
+              0 0 30px rgba(0, 0, 255, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profileImage {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profileImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .navFlex div {
+    font-size: 16px;
+  }
+}

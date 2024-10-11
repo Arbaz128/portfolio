@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import NavBar from './navBar';
+import ContactForm from './ContactForm';
+import Project from './project';
+import Text from './text';
+import WhatsAppContact from './WhatsAppContact';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <div id='project'><Text/></div>
+      <div id='projects'><Project/></div> {/* Ensure you have this component */}
+      <div id='contact'><ContactForm /></div>
+      <WhatsAppContact />
+    </>
   );
 }
-
-export default App;

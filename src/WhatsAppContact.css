@@ -1,0 +1,35 @@
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: transform 0.2s; /* Adds a transition for hover effect */
+    display: flex; /* Center the icon within the button */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .whatsapp-button:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+  }
+  
+  .whatsapp-button img {
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .whatsapp-button img {
+      width: 50px; /* Smaller size for mobile */
+      height: 50px; /* Smaller size for mobile */
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .whatsapp-button img {
+      width: 40px; /* Even smaller size for very small screens */
+      height: 40px; /* Even smaller size for very small screens */
+    }
+  }
+  

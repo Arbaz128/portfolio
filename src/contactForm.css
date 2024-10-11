@@ -1,0 +1,130 @@
+/* Main Service Profile Card */
+.serviceProfile {
+  width: 100%;
+  max-width: 900px;
+  margin: 50px auto;
+  background: #f5f7fa;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header Section */
+.serviceProfile__header {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.serviceProfile__img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.serviceProfile__img:hover {
+  transform: scale(1.1);
+}
+
+.serviceProfile__name {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #333;
+}
+
+.serviceProfile__role {
+  font-size: 18px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Service Form */
+.serviceProfile__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.serviceProfile__service {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.serviceProfile__service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.serviceProfile__service h3 {
+  font-size: 22px;
+  color: #ee41c5;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.serviceProfile__service input {
+  width: 100%;
+  padding: 10px;
+  margin: -2.5%;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.serviceProfile__service input:focus {
+  outline: none;
+  border-color: #00ccff;
+  box-shadow: 0 0 5px rgba(0, 153, 255, 0.3);
+}
+
+/* Button Styling */
+.serviceProfile__btn {
+  padding: 12px 40px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(145deg, #ee41c5, #00ccff);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 153, 255, 0.3);
+  transition: all 0.4s ease;
+}
+
+.serviceProfile__btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 153, 255, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .serviceProfile {
+    padding: 20px;
+  }
+
+  .serviceProfile__service {
+    padding: 20px;
+  }
+
+  .serviceProfile__service input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .serviceProfile__btn {
+    padding: 10px 30px;
+  }
+}
