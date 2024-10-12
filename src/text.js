@@ -2,6 +2,15 @@ import React from 'react';
 import './ServiceProfile.css';
 
 const ServiceProfile = () => {
+  const scrollToSection = (event) => {
+    event.preventDefault();
+    const targetId = event.target.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className="serviceProfile">
       {/* Profile Image Section */}
@@ -33,7 +42,7 @@ const ServiceProfile = () => {
 
       {/* Contact Button */}
       <div className="serviceProfile__contact">
-        <button className="serviceProfile__btn">Let's Work Together</button>
+        <button className="serviceProfile__btn"><a style={{textDecoration:'none',color:"white"}} href='#contact' onClick={scrollToSection}>Let's Work Together</a></button>
       </div>
     </div>
   );
