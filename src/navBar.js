@@ -26,6 +26,7 @@ export default function NavBar() {
         </div>
         <div className={`navLinks ${isOpen ? 'show' : ''}`}>
           <div><a style={{textDecoration:'none',color:"black"}} href='#project' onClick={scrollToSection}>Home</a></div>
+          <div><a style={{textDecoration:'none',color:"black"}} href='#offering' onClick={scrollToSection}>Services</a></div>
           <div><a style={{textDecoration:'none',color:"black"}} href='#projects' onClick={scrollToSection}>Projects</a></div>
           <div><a style={{textDecoration:'none',color:"black"}} href='#contact' onClick={scrollToSection}>Contact</a></div>
           {/* <div><a style={{textDecoration:'none',color:"black"}} href='#testimonials' onClick={scrollToSection}>Testimonials</a></div> */}

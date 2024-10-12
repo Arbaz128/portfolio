@@ -3,19 +3,19 @@ import './Portfolio.css'; // You can style this using CSS
 
 const projects = [
     {
-        "title": "Fintech Application",
+        "title": "PaySwift Fintech Application",
         "imageUrl": "payswift.jpg", // Local or online image link
         "description": "🚀 I'm excited to present a full-stack fintech application that integrates PayPal and Stripe to handle multi-currency transactions seamlessly. Here’s what the app offers:\n\n💸 Add funds via PayPal\n🌐 Send money in any currency with automatic conversion\n🔗 Collaborators can generate and share external payment links\n💼 Admin fee of 2% applied to each transaction\n\nThis project was built from scratch, using React.js for the frontend, Express.js for the backend, and MongoDB for the database."
       }
 ,      
   {
-    title: 'Fintech Application',
+    title: 'Pitiklini Fintech Application',
     imageUrl: 'pitiklini.png',
     "description": "🚀 I'm excited to present a full-stack fintech application that integrates PayPal and Stripe to handle multi-currency transactions seamlessly. Here’s what the app offers:\n\n💸 Add funds via PayPal\n🌐 Send money in any currency with automatic conversion\n🔗 Collaborators can generate and share external payment links\n💼 Admin fee of 2% applied to each transaction\n\nThis project was built from scratch, using React.js for the frontend, Express.js for the backend, and MongoDB for the database.",
   },
   {
-    title: 'Fintech Application',
-    imageUrl: 'pitiklini.png',
+    title: 'PaySwift Fintech Application',
+    imageUrl: 'pay.png',
     "description": "🚀 I'm excited to present a full-stack fintech application that integrates PayPal and Stripe to handle multi-currency transactions seamlessly. Here’s what the app offers:\n\n💸 Add funds via PayPal\n🌐 Send money in any currency with automatic conversion\n🔗 Collaborators can generate and share external payment links\n💼 Admin fee of 2% applied to each transaction\n\nThis project was built from scratch, using React.js for the frontend, Express.js for the backend, and MongoDB for the database.",
   },
 ];
@@ -23,7 +23,7 @@ const projects = [
 const Portfolio = () => {
   return (
     <section id="projects" className="projects-section">
-      <h2>Previous Projects</h2>
+      <h2>Recent Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
