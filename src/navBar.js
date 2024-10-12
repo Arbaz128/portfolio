@@ -28,7 +28,7 @@ export default function NavBar() {
           <div><a style={{textDecoration:'none',color:"black"}} href='#project' onClick={scrollToSection}>Home</a></div>
           <div><a style={{textDecoration:'none',color:"black"}} href='#projects' onClick={scrollToSection}>Projects</a></div>
           <div><a style={{textDecoration:'none',color:"black"}} href='#contact' onClick={scrollToSection}>Contact</a></div>
-          <div><a style={{textDecoration:'none',color:"black"}} href='#testimonials' onClick={scrollToSection}>Testimonials</a></div>
+          {/* <div><a style={{textDecoration:'none',color:"black"}} href='#testimonials' onClick={scrollToSection}>Testimonials</a></div> */}
         </div>
         <div className="hamburger" onClick={toggleMenu}>
           <div className="bar"></div>
