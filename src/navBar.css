@@ -107,3 +107,76 @@
     font-size: 16px;
   }
 }
+
+@media (max-width:992px) {
+  .navFlex
+  {
+    width: 960px;
+  }
+}
+@media (max-width:892px) {
+  .navFlex
+  {
+    width: 940px;
+  }
+}
+@media (max-width:862px) {
+  .navFlex
+  {
+    width: 920px;
+  }
+}
+@media (max-width:842px) {
+  .navFlex
+  {
+    width: 910px;
+  }
+}
+@media (max-width:755px) {
+  .navFlex
+  {
+    width: 800px;
+  }
+}
+@media (max-width:675px) {
+  .navFlex
+  {
+    width: 720px;
+  }
+}
+@media (max-width:575px) {
+  .navFlex
+  {
+    width: 620px;
+  }
+}
+@media (max-width:525px) {
+  .navFlex
+  {
+    width: 550px;
+  }
+}
+@media (max-width:465px) {
+  .navFlex
+  {
+    width: 500px;
+  }
+}
+@media (max-width:405px) {
+  .navFlex
+  {
+    width: 450px;
+  }
+}
+@media (max-width:345px) {
+  .navFlex
+  {
+    width: 400px;
+  }
+}
+@media (max-width:305px) {
+  .navFlex
+  {
+    width: 350px;
+  }
+}
